@@ -32,8 +32,9 @@ console.log(loggedIn); */
 
 //**  COVERNTING IN STRING **
 
-let num = 34;
+// let num = 34;
 
-let stringNum = String(num);
-console.log(stringNum);
-console.log(typeof stringNum); // string
+// let stringNum = String(num);
+// console.log(stringNum);
+// console.log(typeof stringNum); // string
+
