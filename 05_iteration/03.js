@@ -54,22 +54,4 @@ for (const [key,value] of newObj){
 */
 
 
-const coding= [
-    {
-        language : "javascript",
-        langugeFileName: "js"
-    },
-    {
-        language : "python",
-        langugeFileName: "py"
-    },
-    {
-        language : "java",
-        langugeFileName: "java"
-    }
 
-]
-
-coding.forEach( (items) => {
-    console.log(items.language)
-})

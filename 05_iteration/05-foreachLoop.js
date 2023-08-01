@@ -23,3 +23,25 @@ coding.forEach( (itms ,inde , arr) => {
     console.log(itms, inde, arr)
 } )
 */
+
+// ===================================
+
+const coding= [
+   {
+       language : "javascript",
+       langugeFileName: "js"
+   },
+   {
+       language : "python",
+       langugeFileName: "py"
+   },
+   {
+       language : "java",
+       langugeFileName: "java"
+   }
+
+]
+
+coding.forEach( (items) => {
+   console.log(items.language)
+})
