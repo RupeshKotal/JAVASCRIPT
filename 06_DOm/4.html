@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="languge">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+function addLang(lang) {
+ const li = document.createElement('li');
+ li.innerHTML=`${lang}`;
+ document.querySelector('.languge').appendChild(li)
+}
+
+addLang("Python")
+addLang("java")
+
+// Optimized way to add
+
+function addOptLang(lang) {
+  const li =  document.createElement('li');
+  li.appendChild(document.createTextNode(lang));
+  document.querySelector('.languge').appendChild(li)
+}
+
+addOptLang("Typescript")
+
+
+//For Editing :type 1
+
+const secondLang = document.querySelector("li:nth-child(2)");
+//secondLang.innerHTML= "Rupesh"
+console.log(secondLang)
+const newLi = document.createElement('li');
+newLi.textContent = "Ruby"
+
+secondLang.replaceWith(newLi)
+
+// Edit :Type -02
+
+const firstLang = document.querySelector("li:first-child");
+console.log(firstLang)
+firstLang.outerHTML= "<li>Rupesh</Li>"
+
+
+// For removing
+
+const lastLang = document.querySelector("li:last-child");
+lastLang.remove()
+</script>
+</html>
