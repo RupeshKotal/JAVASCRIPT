@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <ul id="img">
+        <li id="box-1"><img width="200px" height="300px" src="https://images.pexels.com/photos/17838732/pexels-photo-17838732/free-photo-of-nature-field-animal-farm.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+        <li id="box-2"><img width="200px" height="300px" src="https://images.pexels.com/photos/17016410/pexels-photo-17016410/free-photo-of-silhouette-of-a-man-in-a-window.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+        <li id="box-3"><img width="200px" height="300px" src="https://images.pexels.com/photos/17836360/pexels-photo-17836360/free-photo-of-catarata-de-ahuashiyacu.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+        <li id="box-4"><img width="200px" height="300px" src="https://images.pexels.com/photos/15989066/pexels-photo-15989066/free-photo-of-people-looking-at-a-foggy-valley.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+        <li><a href="https://www.google.com/">Google</a></li>
+    </ul>
+</body>
+<script>
+
+const img = document.getElementById('img')
+
+img.addEventListener('click', function(e){
+     console.log("Clicked on ul")
+})
+
+    const box1 = document.getElementById('box-1')
+    //console.log(box1);
+    box1.addEventListener('click', function(e){
+        e.stopPropagation();
+      console.log('Clicked on box 1')
+    }, false)
+
+
+</script>
+</html>
