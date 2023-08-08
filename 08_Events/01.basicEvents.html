@@ -19,17 +19,39 @@
 
 const img = document.getElementById('img')
 
-img.addEventListener('click', function(e){
-     console.log("Clicked on ul")
-})
+// img.addEventListener('click', function(e){
+//      console.log("Clicked on ul")
+// })
 
     const box1 = document.getElementById('box-1')
     //console.log(box1);
-    box1.addEventListener('click', function(e){
-        e.stopPropagation();
-      console.log('Clicked on box 1')
-    }, false)
+
+    // box1.addEventListener('click', function(e){
+    //     e.stopPropagation();
+    //   console.log('Clicked on box 1')
+    // }, false)
+
+    // const box2 = document.getElementById('img')
+    // box2.addEventListener('click', function(e){
+    //    console.log(e.target.parentNode())
+    // })
+
+    img.addEventListener('click',function(e){
+
+        // console.log(e.target.tagName)
+           
+        if(e.target.tagName === 'IMG'){
+            let removeit = e.target.parentNode;
+           removeit.remove()
+        }
 
 
-</script>
+        // console.log(e.target.parentNode)
+       
+    })
+
+   
+
+
+</script> 
 </html>
