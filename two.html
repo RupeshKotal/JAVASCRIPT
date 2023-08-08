@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Work Hard in silence let your success make a voice</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    // const date = function(str){
+    //     console.log(/*"Rupesh",*/Date.now(),str)
+    // }
+    
+
+    // const clearIntr = setInterval(date, 3000, "hello")
+
+    // clearInterval(clearIntr)
+
+    const Start = document.querySelector('#start')
+    const Stop = document.querySelector('#stop')
+
+ const output = function(){
+        console.log("Rupesh", Date.now())
+    }
+
+   const Setinter = setInterval(output,3000)
+
+
+   
+const clearOut = Start.addEventListener('click',function(e){
+    e.Setinter
+})
+
+
+  Stop.addEventListener('click', function(e){
+    clearInterval(Setinter)
+})
+
+
+
+</script>
+</html>
